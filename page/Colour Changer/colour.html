@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        button{
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            font-family: 'cursive';
+            border: 2px solid;
+            border-radius: 50px;
+            font-family: 'Chakra Petch';
+        }
+    </style>
+</head>
+<body>
+    
+
+    <button>Change Colour</button>
+
+<Script>
+let body = document.querySelector('body')
+let change = document.querySelector('button');
+let colours = ['blue', 'red', 'yellow', 'white', 'black', 'beige', 'darkgrey']
+rechange = () => {
+    let theChange = parseInt(Math.random()*colours.length);
+    body.style.backgroundColor = colours[theChange];
+    change.style.backgroundColor = colours[theChange];
+
+        if(change.style.backgroundColor = colours[4]){
+            body.style.backgroundColor = colours
+            change.style.backgroundColor = 'white'
+        }
+}
+
+change.addEventListener('click', rechange)
+
+</Script>
+
+</body>
+</html>

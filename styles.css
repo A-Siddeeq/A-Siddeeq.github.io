@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  width: 100%;
+}
+
+header{
+    background-color: #696969;
+    padding-bottom: 9px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+main{
+  height: 95vh;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+body{
+    background: linear-gradient(90deg, black, darkgray, grey);
+    color: white;
+    position: initial;
+    margin-bottom: 15px;
+}
+
+
+
+li{
+    position: relative;
+    list-style: none;
+    display: inline;
+    font-family: 'Rubik';
+}
+
+a{
+    text-decoration: none;
+    border: 1px solid auto;
+}
+
+li :hover{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+ol{
+    text-align: center;
+    font-size: 24px;
+    word-spacing:40px;
+    padding-top: 13px;
+    vertical-align: middle;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+    font-size: 50px;
+    font-family: 'Rubik';
+}
+
+
+h3{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+footer{
+    margin-bottom: 0;
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    background: linear-gradient(90deg, black, darkgray, grey, black);
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Rubik';
+    text-shadow: 1px 1px #fff;
+}
+
+.card:hover{
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+form{
+  display: grid;
+  padding: 0 10vw;
+}
+
+:is(input, textarea){
+  border: 1px solid #000;
+  padding: 5px;
+  font-size: 24px;
+  font-family: 'Rubik';
+  border: 1px solid #000;
+  border-radius: 12px;
+}
+
+::placeholder{
+  font-size: 20px;
+  color: #000;
+  font-family: 'courgette';
+}
+
+#submit:hover{
+ background-color: #696669;
+ border: none;
+}
+
+#submit{
+  padding: 5px;
+  font-size: 19px;
+  background-color: #ffffff;
+  color: #000;
+  border: 3px solid #000;
+  font-family: 'Rubik';
+  border-radius: 12px;
+}
+
+label{
+  font-size: 20px;
+  font-family: 'Rubik';
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+input:focus{
+  background-color: #696969;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #000;
+}
+
+textarea:focus{
+  background-color: #696969;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #000;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+    ol{
+        word-spacing: 5px;
+        font-size: 20px;
+    }
+
+  input, textarea{
+      border: 1px solid #000;
+      padding: 2px;
+      font-size: 15px;
+  }
+  
+  ::placeholder{
+      font-size: 15px;
+      color: #000;
+  }
+
+    footer{
+        margin-bottom: 0;
+        width: 100%;
+        height: 20vh;
+        bottom: 0;
+        background-color: #696969;
+        font-size: 20px;
+        font-weight: 900;
+        text-shadow: 1px 1px #000;
+    }
+  }
