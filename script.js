@@ -14,5 +14,7 @@
         console.log(res);
         alert('Message Sent Successfully')
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+     console.log(err)
+     alert('Message not sent! Try Again')});
 }

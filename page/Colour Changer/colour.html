@@ -31,24 +31,24 @@
 <body>
     
 
-    <button>Change Colour</button>
+    <button></button>
 
 <Script>
 let body = document.querySelector('body')
 let change = document.querySelector('button');
-let colours = ['blue', 'red', 'yellow', 'white', 'black', 'beige', 'darkgrey']
-rechange = () => {
-    let theChange = parseInt(Math.random()*colours.length);
-    body.style.backgroundColor = colours[theChange];
-    change.style.backgroundColor = colours[theChange];
+let hexCode = '#'
+let code = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+for(let i=0; i<6; i++){
+    hexCode += code[getRandomCode()]
+    body.style.backgroundColor = hexCode;
+    change.innerHTML = `Reload page to change colour <br> colour code - ${hexCode}`; }
 
-        if(change.style.backgroundColor = colours[4]){
-            body.style.backgroundColor = colours
-            change.style.backgroundColor = 'white'
-        }
+function getRandomCode() {
+   return Math.floor(Math.random() * code.length)
 }
 
-change.addEventListener('click', rechange)
+
+
 
 </Script>
 

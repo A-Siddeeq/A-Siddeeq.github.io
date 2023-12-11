@@ -5,11 +5,17 @@ body{
 }
 
 header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #696969;
-    padding-bottom: 9px;
+    padding: 9px;
     position: fixed;
-    width: 100vw;
     z-index: 1;
+    font-family: 'Rubik';
+    font-size: 20px;
 }
 
 main{
@@ -28,20 +34,12 @@ body{
 }
 
 
-
-li{
-    position: relative;
-    list-style: none;
-    display: inline;
-    font-family: 'Rubik';
-}
-
 a{
     text-decoration: none;
     border: 1px solid auto;
 }
 
-li :hover{
+#nav :hover{
     background-color: #000;
     color: #fff;
     padding: 5px;
@@ -49,20 +47,12 @@ li :hover{
     font-family: Verdana, sans-serif;
 }
 
-ol{
-    text-align: center;
-    font-size: 24px;
-    word-spacing:40px;
-    padding-top: 13px;
-    vertical-align: middle;
-}
-
-h1{
-    position: relative;
-    text-align: center;
-    padding-top: 40vh;
-    font-size: 50px;
-    font-family: 'Rubik';
+#main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: 'Rubik';
 }
 
 
@@ -86,6 +76,7 @@ footer{
 }
 
 .card:hover{
+  transition: 1.5s;
   opacity: 0.6;
   font-size: 12px;
   font-weight: bold;
@@ -151,8 +142,7 @@ textarea:focus{
 
 @media only screen and (max-width: 960px) {
 
-    ol{
-        word-spacing: 5px;
+    header{
         font-size: 20px;
     }
 
