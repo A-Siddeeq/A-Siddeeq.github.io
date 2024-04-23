@@ -3,14 +3,14 @@ import About from './pages/About'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as Routes, Route } from 'react-router-dom'
 
 function App() {
  
   return (
     <> 
 
-<BrowserRouter>
+<Router>
   <Routes>
     <Route element={<HomePage />} index path='/' />
     <Route path='/About' element={<About />} />
@@ -18,7 +18,7 @@ function App() {
     <Route path='/Contact' element={<Contact />} />
   </Routes>
   <Footer />
-</BrowserRouter>
+</Router>
 
   </>
   )
