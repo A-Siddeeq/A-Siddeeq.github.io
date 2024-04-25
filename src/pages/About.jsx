@@ -6,6 +6,7 @@ import tailwind from '../assets/img/tailwind.png'
 import git from '../assets/img/git.png'
 import JS from '../assets/img/JS.png'
 import react from '../assets/img/react.png'
+import AboutCard from '../components/AboutCard'
 
 const About = () => {
   return (
@@ -20,22 +21,10 @@ const About = () => {
                 <img src={pic} alt="" className='w-36 border-0 rounded-2xl mx-auto py-2'/>
 
               <div className='grid grid-cols-2 h-60 md:text-center'>
-                <section className='border-2 border-green-950 rounded-2xl m-1 text-center bg-green-500 transition ease-linear hover:translate-y-1 hover:shadow-xl cursor-pointer'>
-                    <p className="text-gray-900">Name:</p>
-                    <p className='text-white'>Abubakar Sadiq</p>
-                </section>
-                <section className='border-2 border-green-950 rounded-2xl m-1 text-center bg-green-500 transition ease-linear hover:translate-y-1 hover:shadow-xl cursor-pointer'>
-                    <p className="text-gray-900">Stack:</p>
-                    <p className='text-white'>JavaScript, Tailwind & React</p>
-                </section>
-                <section className='border-2 border-green-950 rounded-2xl m-1 text-center bg-green-500 transition ease-linear hover:translate-y-1 hover:shadow-xl cursor-pointer'>
-                    <p className="text-gray-900">Experience:</p>
-                    <p className='text-white'>0 - 1 year(s)</p>
-                </section>
-                <section className='border-2 border-green-950 rounded-2xl m-1 text-center bg-green-500 transition ease-linear hover:translate-y-1 hover:shadow-xl cursor-pointer'>
-                    <p className="text-gray-900">Freelance/Contract:</p>
-                    <p className='text-green-200'>Available</p>
-                </section>
+                <AboutCard info='Name:' details='Abubakar Sadiq'/>
+                <AboutCard info='Stack:' details='JavaScript, Tailwind & React'/>
+                <AboutCard info='Experience:' details='0 -1 Years'/>
+                <AboutCard info='Freelance/Contract:' details='Available'/>
               </div>
             </div>
         </div>

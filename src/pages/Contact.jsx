@@ -1,6 +1,9 @@
 import { faMailReply, faPhone, faHouse, faUserTie, faBriefcase, faEnvelopeOpen  } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import contactOne from  '../assets/img/contactOne.svg'
+import contactThree from  '../assets/img/contactThree.svg'
+import contactFour from  '../assets/img/contactFour.svg'
 
 const Contact = () => {
   return (
@@ -34,16 +37,24 @@ const Contact = () => {
       </div>
       </div>
 
-    {/*  <div className="flex flex-row justify-evenly align-middle py-2 mb-0">
-          {//OME PAGE}
-          <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'><FontAwesomeIcon icon={faHouse} size="2xl" style={{color: "#22c55e",}}/></a>
-          {//ABOUT PAGE}
-          <a href='/About'  className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'><FontAwesomeIcon icon={faUserTie} size="2xl" style={{color: "#22c55e",}}/></a>
-          {//PORTFOLIO ICON}
-          <a href='Portfolio' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'><FontAwesomeIcon icon={faBriefcase} size="2xl" style={{color: "#22c55e",}}/></a>
-          {//CONTACT ICON}
-          <a href='Contact' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'><FontAwesomeIcon icon={faEnvelopeOpen} size="2xl" style={{color: "#22c55e",}}/></a>
-        </div> */}
+ <div className="flex flex-row justify-evenly align-middle py-2 mb-0">
+          {/*LINKEDIN*/}
+          <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
+            <img src={contactOne} className='w-16'/>
+          </a>
+          {/*OTHER*/}
+          <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
+            <img src={contactOne} className='w-16'/>
+          </a>
+          {/*GITHUB*/}
+          <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
+            <img src={contactThree} className='w-16'/>
+          </a>
+          {/*WHATSAPP*/}
+          <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
+            <img src={contactFour} className='w-16'/>
+          </a>
+        </div> 
 
     </div>
   )
