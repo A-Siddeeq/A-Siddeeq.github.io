@@ -10,7 +10,7 @@ import AboutCard from '../components/AboutCard'
 
 const About = () => {
   return (
-    <div className='bg-bgCol h-vh'>
+    <div className='bg-bgCol h-max'>
       <h1 className='text-left text-3xl py-3 md:text-center text-white'>ABOUT ME</h1>
     <div className='md:flex md:flex-row h-full'>
       
