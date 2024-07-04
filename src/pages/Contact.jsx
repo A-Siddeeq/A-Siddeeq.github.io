@@ -42,10 +42,10 @@ const Contact = () => {
           <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
             <img src={contactOne} className='w-16'/>
           </a>
-          {/*OTHER*/}
+          {/*OTHER
           <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
             <img src={contactOne} className='w-16'/>
-          </a>
+          </a> */}
           {/*GITHUB*/}
           <a href='/Home' className='transition ease-in-out delay-150 hover:-translate-y-1 rounded-full hover:bg-green-300 p-2'>
             <img src={contactThree} className='w-16'/>
